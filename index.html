@@ -1008,7 +1008,7 @@
                 <h2 class="section-title">Contactez W2K Digital</h2>
                 <p>Basés à Saint-Étienne, nous accompagnons les PME de la région dans leur transformation digitale !</p>
                 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mblkqyae" method="POST">
                     <div class="form-group">
                         <label for="nom">Nom de l'entreprise</label>
                         <input type="text" id="nom" name="nom" required>
@@ -1083,26 +1083,20 @@
             });
         });
 
-        // Form submission
+        // Form submission - Real Formspree integration
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Simulate form submission
             const submitBtn = this.querySelector('.submit-btn');
             const originalText = submitBtn.textContent;
             
             submitBtn.textContent = 'Envoi en cours...';
             submitBtn.disabled = true;
             
+            // Form will be submitted to Formspree automatically
+            // Re-enable button after a delay in case of errors
             setTimeout(() => {
-                alert('Merci pour votre demande ! Nous vous recontacterons sous 24h.');
-                this.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-            }, 1500);
+            }, 3000);
         });
     </script>
 </body>
