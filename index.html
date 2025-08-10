@@ -49,6 +49,34 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(255,215,0,0.3);
+        }
+
+        .logo-text {
+            font-family: 'Arial', sans-serif;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-w2k {
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        .logo-digital {
+            font-weight: 300;
+            font-size: 1.5rem;
+            opacity: 0.9;
         }
 
         .nav-links {
@@ -660,7 +688,13 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">W2K Digital</div>
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <div class="logo-text">
+                    <span class="logo-w2k">W2K</span>
+                    <span class="logo-digital">Digital</span>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
