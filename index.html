@@ -1,30 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W2K Digital - Votre Agence Web Complète à Saint-Étienne</title>
+    
+    <!-- SEO META TAGS OPTIMISÉES -->
+    <title>W2K Digital - Agence Web Saint-Étienne | Présence Digitale PME</title>
+    <meta name="description" content="W2K Digital, agence web à Saint-Étienne spécialisée dans la présence digitale des PME. Sites internet, identité visuelle, marketing digital. Devis gratuit - Contactez-nous !">
+    
+    <!-- MOTS-CLÉS ET LOCALISATION -->
+    <meta name="keywords" content="agence web saint etienne, création site internet, agence digitale loire, présence digitale pme, site web professionnel, marketing digital saint etienne">
+    <meta name="author" content="W2K Digital - K. Wilfried">
+    <meta name="robots" content="index, follow">
+    
+    <!-- GEO LOCALISATION -->
+    <meta name="geo.region" content="FR-42">
+    <meta name="geo.placename" content="Saint-Étienne">
+    <meta name="geo.position" content="45.4397;4.3872">
+    <meta name="ICBM" content="45.4397, 4.3872">
+    
+    <!-- OPEN GRAPH POUR RÉSEAUX SOCIAUX -->
+    <meta property="og:title" content="W2K Digital - Agence Web Saint-Étienne | Présence Digitale PME">
+    <meta property="og:description" content="Agence web spécialisée dans la présence digitale des PME à Saint-Étienne. Sites internet, identité visuelle, marketing digital.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.w2k-digital.com">
+    <meta property="og:image" content="https://www.w2k-digital.com/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="W2K Digital - Agence Web Saint-Étienne">
+    <meta name="twitter:description" content="Spécialiste présence digitale PME - Sites web, identité visuelle, marketing digital">
+    
+    <!-- DONNÉES STRUCTURÉES LOCALBUSINESS -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "W2K Digital",
+        "image": "https://www.w2k-digital.com/logo.jpg",
+        "description": "Agence web spécialisée dans la présence digitale des PME à Saint-Étienne",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "35 rue d'Arcole",
+            "addressLocality": "Saint-Étienne",
+            "postalCode": "42000",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.4397",
+            "longitude": "4.3872"
+        },
+        "telephone": "+33642535759",
+        "email": "contact@w2k-digital.com",
+        "url": "https://www.w2k-digital.com",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "priceRange": "€€",
+        "paymentAccepted": "Cash, Credit Card, Bank transfer",
+        "areaServed": "Saint-Étienne, Loire, Auvergne-Rhône-Alpes",
+        "serviceType": "Web Development, Digital Marketing, Graphic Design"
+    }
+    </script>
+    
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://www.w2k-digital.com">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
+        
         /* Header */
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -36,13 +100,13 @@
             z-index: 1000;
             backdrop-filter: blur(10px);
         }
-
+        
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
@@ -51,18 +115,18 @@
             gap: 0.5rem;
             color: white;
         }
-
+        
         .logo-icon {
             font-size: 2rem;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
-
+        
         .logo-text {
             font-family: 'Arial', sans-serif;
             letter-spacing: -0.5px;
             color: white;
         }
-
+        
         .logo-w2k {
             font-weight: 900;
             font-size: 2rem;
@@ -72,20 +136,20 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
-
+        
         .logo-digital {
             font-weight: 300;
             font-size: 1.5rem;
             color: rgba(255,255,255,0.95);
             margin-left: 0.2rem;
         }
-
+        
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-
+        
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -93,12 +157,12 @@
             padding: 0.5rem 1rem;
             border-radius: 25px;
         }
-
+        
         .nav-links a:hover {
             background: rgba(255,255,255,0.2);
             transform: translateY(-2px);
         }
-
+        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -108,7 +172,7 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .hero::before {
             content: '';
             position: absolute;
@@ -119,30 +183,30 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
             animation: float 20s ease-in-out infinite;
         }
-
+        
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
         }
-
+        
         .hero-content {
             position: relative;
             z-index: 2;
         }
-
+        
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             animation: fadeInUp 1s ease;
         }
-
+        
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
             animation: fadeInUp 1s ease 0.3s both;
         }
-
+        
         .cta-button {
             display: inline-block;
             background: linear-gradient(45deg, #ff6b6b, #ee5a52);
@@ -155,12 +219,12 @@
             box-shadow: 0 10px 30px rgba(255,107,107,0.3);
             animation: fadeInUp 1s ease 0.6s both;
         }
-
+        
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(255,107,107,0.4);
         }
-
+        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -171,18 +235,18 @@
                 transform: translateY(0);
             }
         }
-
+        
         /* Team Section */
         .team {
             padding: 100px 0;
             background: white;
         }
-
+        
         .team-content {
             text-align: center;
             margin-bottom: 3rem;
         }
-
+        
         .team-image {
             width: 100%;
             max-width: 600px;
@@ -192,27 +256,27 @@
             margin: 2rem auto;
             box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
-
+        
         /* Services Section */
         .services {
             padding: 100px 0;
             background: #f8f9fa;
         }
-
+        
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #333;
         }
-
+        
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
+        
         .service-card {
             background: white;
             padding: 2rem;
@@ -223,7 +287,7 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .service-card::before {
             content: '';
             position: absolute;
@@ -234,16 +298,16 @@
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
             transition: left 0.5s ease;
         }
-
+        
         .service-card:hover::before {
             left: 100%;
         }
-
+        
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 50px rgba(0,0,0,0.15);
         }
-
+        
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -252,38 +316,38 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
+        
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #333;
         }
-
+        
         .service-card p {
             color: #666;
             line-height: 1.6;
         }
-
+        
         .price {
             font-size: 1.2rem;
             font-weight: bold;
             color: #ff6b6b;
             margin-top: 1rem;
         }
-
+        
         /* Section Produits */
         .products {
             padding: 100px 0;
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
-
+        
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
+        
         .product-card {
             background: white;
             padding: 2rem;
@@ -295,54 +359,54 @@
             overflow: hidden;
             border: 2px solid transparent;
         }
-
+        
         .product-card:hover {
             transform: translateY(-15px);
             box-shadow: 0 25px 60px rgba(0,0,0,0.15);
         }
-
+        
         .product-card.featured {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             transform: scale(1.05);
         }
-
+        
         .product-card.featured:hover {
             transform: scale(1.08) translateY(-10px);
         }
-
+        
         .product-icon {
             font-size: 4rem;
             margin-bottom: 1.5rem;
         }
-
+        
         .product-card h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
             color: #333;
         }
-
+        
         .featured h3 {
             color: white;
         }
-
+        
         .product-description {
             color: #666;
             line-height: 1.6;
             margin-bottom: 1.5rem;
         }
-
+        
         .featured .product-description {
             color: rgba(255,255,255,0.9);
         }
-
+        
         .product-features {
             list-style: none;
             padding: 0;
             margin: 1.5rem 0;
             text-align: left;
         }
-
+        
         .product-features li {
             padding: 8px 0;
             padding-left: 25px;
@@ -350,12 +414,12 @@
             color: #555;
             border-bottom: 1px solid #f0f0f0;
         }
-
+        
         .featured .product-features li {
             color: rgba(255,255,255,0.9);
             border-bottom-color: rgba(255,255,255,0.2);
         }
-
+        
         .product-features li::before {
             content: '✓';
             position: absolute;
@@ -363,32 +427,32 @@
             color: #667eea;
             font-weight: bold;
         }
-
+        
         .featured .product-features li::before {
             color: #ffd700;
         }
-
+        
         .product-price {
             font-size: 2.5rem;
             font-weight: bold;
             color: #667eea;
             margin: 1.5rem 0;
         }
-
+        
         .featured .product-price {
             color: #ffd700;
         }
-
+        
         .product-subtitle {
             font-size: 0.9rem;
             color: #888;
             margin-bottom: 1.5rem;
         }
-
+        
         .featured .product-subtitle {
             color: rgba(255,255,255,0.8);
         }
-
+        
         .cta-product {
             display: inline-block;
             background: linear-gradient(45deg, #667eea, #764ba2);
@@ -401,17 +465,17 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             margin-top: 1rem;
         }
-
+        
         .cta-product:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.3);
         }
-
+        
         .featured .cta-product {
             background: linear-gradient(45deg, #ffd700, #ffed4e);
             color: #333;
         }
-
+        
         .popular-badge {
             position: absolute;
             top: -10px;
@@ -425,25 +489,25 @@
             box-shadow: 0 5px 15px rgba(255,107,107,0.3);
             animation: pulse 2s infinite;
         }
-
+        
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
         }
-
+        
         /* Portfolio Section */
         .portfolio {
             padding: 100px 0;
             background: white;
         }
-
+        
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
+        
         .portfolio-item {
             position: relative;
             border-radius: 15px;
@@ -451,12 +515,12 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
-
+        
         .portfolio-item:hover {
             transform: scale(1.03);
             box-shadow: 0 20px 50px rgba(0,0,0,0.2);
         }
-
+        
         .portfolio-image {
             width: 100%;
             height: 250px;
@@ -472,7 +536,7 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
             position: relative;
         }
-
+        
         .portfolio-image::before {
             content: '';
             position: absolute;
@@ -483,42 +547,42 @@
             background: rgba(0,0,0,0.4);
             z-index: 1;
         }
-
+        
         .portfolio-image span {
             position: relative;
             z-index: 2;
         }
-
+        
         .portfolio-info {
             padding: 1.5rem;
             background: white;
         }
-
+        
         .portfolio-info h4 {
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
             color: #333;
         }
-
+        
         .portfolio-info p {
             color: #666;
             font-size: 0.9rem;
         }
-
+        
         /* Section Avis Clients */
         .testimonials {
             padding: 100px 0;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-
+        
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
+        
         .testimonial-card {
             background: rgba(255,255,255,0.15);
             padding: 2rem;
@@ -528,33 +592,33 @@
             transition: all 0.3s ease;
             position: relative;
         }
-
+        
         .testimonial-card:hover {
             transform: translateY(-10px);
             background: rgba(255,255,255,0.2);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
-
+        
         .testimonial-quote {
             font-size: 3rem;
             color: #ffd700;
             margin-bottom: 1rem;
             line-height: 1;
         }
-
+        
         .testimonial-text {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 1.5rem;
             font-style: italic;
         }
-
+        
         .testimonial-author {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
-
+        
         .author-avatar {
             width: 50px;
             height: 50px;
@@ -567,28 +631,28 @@
             color: #333;
             font-size: 1.2rem;
         }
-
+        
         .author-info h4 {
             margin-bottom: 0.25rem;
             font-size: 1.1rem;
         }
-
+        
         .author-info p {
             opacity: 0.8;
             font-size: 0.9rem;
         }
-
+        
         .stars {
             display: flex;
             gap: 3px;
             margin-bottom: 1rem;
         }
-
+        
         .star {
             color: #ffd700;
             font-size: 1.2rem;
         }
-
+        
         .testimonial-date {
             position: absolute;
             top: 1rem;
@@ -599,25 +663,25 @@
             font-size: 0.8rem;
             opacity: 0.8;
         }
-
+        
         /* Contact Section */
         .contact {
             padding: 100px 0;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-
+        
         .contact-content {
             text-align: center;
         }
-
+        
         .contact-info {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin: 2rem 0 3rem;
         }
-
+        
         .contact-item {
             background: rgba(255,255,255,0.15);
             padding: 2rem;
@@ -625,26 +689,26 @@
             backdrop-filter: blur(10px);
             text-align: center;
         }
-
+        
         .contact-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #ffd700;
         }
-
+        
         .contact-item h3 {
             margin-bottom: 0.5rem;
         }
-
+        
         .contact-item a {
             color: white;
             text-decoration: none;
         }
-
+        
         .contact-item a:hover {
             color: #ffd700;
         }
-
+        
         .contact-form {
             max-width: 600px;
             margin: 3rem auto 0;
@@ -653,18 +717,18 @@
             border-radius: 15px;
             backdrop-filter: blur(10px);
         }
-
+        
         .form-group {
             margin-bottom: 1.5rem;
             text-align: left;
         }
-
+        
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: bold;
         }
-
+        
         .form-group input,
         .form-group textarea,
         .form-group select {
@@ -675,12 +739,12 @@
             background: rgba(255,255,255,0.9);
             font-size: 1rem;
         }
-
+        
         .form-group textarea {
             height: 120px;
             resize: vertical;
         }
-
+        
         .submit-btn {
             background: linear-gradient(45deg, #ff6b6b, #ee5a52);
             color: white;
@@ -692,12 +756,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-
+        
         .submit-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(255,107,107,0.3);
         }
-
+        
         /* Footer */
         footer {
             background: #333;
@@ -705,21 +769,21 @@
             text-align: center;
             padding: 2rem 0;
         }
-
+        
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
+            
             .hero h1 {
                 font-size: 2.5rem;
             }
-
+            
             .hero p {
                 font-size: 1.1rem;
             }
-
+            
             .services-grid,
             .portfolio-grid,
             .products-grid,
@@ -727,14 +791,14 @@
                 grid-template-columns: 1fr;
             }
         }
-
+        
         /* Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
-
+        
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
@@ -765,8 +829,9 @@
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Votre Présence Digitale Complète</h1>
-                <p>Sites web, identité visuelle, flyers - Tout ce dont votre PME a besoin pour briller en ligne</p>
+                <!-- H1 OPTIMISÉ SEO -->
+                <h1>Agence Web Saint-Étienne - Présence Digitale PME</h1>
+                <p>Sites web professionnels, identité visuelle, marketing digital - W2K Digital accompagne les PME de la Loire dans leur transformation numérique</p>
                 <a href="#contact" class="cta-button">Démarrer Votre Projet</a>
             </div>
         </div>
@@ -775,52 +840,60 @@
     <section class="team">
         <div class="container">
             <div class="team-content">
-                <h2 class="section-title">Notre Équipe W2K Digital</h2>
-                <p>Une équipe passionnée et expérimentée au service de votre réussite digitale</p>
+                <!-- H2 AVEC MOTS-CLÉS LOCAUX -->
+                <h2 class="section-title">Agence Digitale Saint-Étienne - Notre Équipe</h2>
+                <p>Experts en solutions digitales pour PME stéphanoises - Nous combinons créativité, technologie et stratégie locale pour faire grandir votre entreprise dans la Loire</p>
                 <div class="team-image"></div>
-                <p><strong>Experts en solutions digitales pour PME</strong> - Nous combinons créativité, technologie et stratégie pour faire grandir votre entreprise</p>
+                <p><strong>Spécialistes présence digitale PME Saint-Étienne</strong> - Une équipe passionnée au service de votre réussite numérique</p>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Nos Services</h2>
+            <!-- H2 AVEC MOTS-CLÉS STRATÉGIQUES -->
+            <h2 class="section-title">Services Web Saint-Étienne - Solutions Digitales PME</h2>
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <div class="service-icon">🌐</div>
-                    <h3>Site Web Professionnel</h3>
-                    <p>Site vitrine responsive, optimisé SEO, avec hébergement et nom de domaine inclus. Design moderne et adaptatif.</p>
+                    <!-- H3 OPTIMISÉS POUR CHAQUE SERVICE -->
+                    <h3>Création Site Web Saint-Étienne</h3>
+                    <p>Site vitrine responsive, optimisé SEO, avec hébergement et nom de domaine inclus. Design moderne et adaptatif pour PME stéphanoises.</p>
                     <div class="price">À partir de 890€</div>
                 </div>
+                
                 <div class="service-card fade-in">
                     <div class="service-icon">🎨</div>
-                    <h3>Identité Visuelle</h3>
-                    <p>Logo professionnel, charte graphique, cartes de visite et supports de communication cohérents.</p>
+                    <h3>Identité Visuelle Professionnelle</h3>
+                    <p>Logo professionnel, charte graphique, cartes de visite et supports de communication cohérents pour entreprises de la Loire.</p>
                     <div class="price">À partir de 590€</div>
                 </div>
+                
                 <div class="service-card fade-in">
                     <div class="service-icon">📱</div>
-                    <h3>Marketing Digital</h3>
-                    <p>Flyers, bannières web, contenus réseaux sociaux, référencement naturel pour booster votre visibilité.</p>
+                    <h3>Marketing Digital Local</h3>
+                    <p>Référencement Google, réseaux sociaux, publicité locale Saint-Étienne pour booster la visibilité de votre PME.</p>
                     <div class="price">À partir de 390€</div>
                 </div>
+                
                 <div class="service-card fade-in">
                     <div class="service-icon">🛒</div>
-                    <h3>E-commerce</h3>
+                    <h3>E-commerce Saint-Étienne</h3>
                     <p>Boutique en ligne complète avec paiement sécurisé, gestion des stocks et tableau de bord intuitif.</p>
                     <div class="price">À partir de 1290€</div>
                 </div>
+                
                 <div class="service-card fade-in">
                     <div class="service-icon">🔧</div>
-                    <h3>Maintenance & Support</h3>
+                    <h3>Maintenance Site Web</h3>
                     <p>Mise à jour, sécurité, sauvegarde et support technique pour garantir la performance de votre site.</p>
                     <div class="price">À partir de 79€/mois</div>
                 </div>
+                
                 <div class="service-card fade-in">
                     <div class="service-icon">📊</div>
-                    <h3>Pack Complet PME</h3>
-                    <p>Site + Logo + Flyers + Cartes de visite + Réseaux sociaux. La solution tout-en-un pour votre entreprise.</p>
+                    <h3>Pack Complet PME Saint-Étienne</h3>
+                    <p>Site + Logo + Marketing + Réseaux sociaux. La solution tout-en-un pour votre entreprise stéphanoise.</p>
                     <div class="price">À partir de 1490€</div>
                 </div>
             </div>
@@ -829,12 +902,12 @@
 
     <section id="produits" class="products">
         <div class="container">
-            <h2 class="section-title">Nos Produits & Tarifs</h2>
+            <h2 class="section-title">Tarifs Agence Web Saint-Étienne - Solutions PME</h2>
             <div class="products-grid">
                 <div class="product-card fade-in">
                     <div class="product-icon">🌐</div>
                     <h3>Site Vitrine Essentiel</h3>
-                    <p class="product-description">Parfait pour présenter votre activité et attirer de nouveaux clients localement.</p>
+                    <p class="product-description">Parfait pour présenter votre activité et attirer de nouveaux clients localement dans la Loire.</p>
                     <ul class="product-features">
                         <li>5 pages personnalisées</li>
                         <li>Design responsive mobile</li>
@@ -848,7 +921,7 @@
                     <div class="product-subtitle">Idéal pour artisans et PME</div>
                     <a href="#contact" class="cta-product">Commander</a>
                 </div>
-
+                
                 <div class="product-card featured fade-in">
                     <div class="popular-badge">PLUS POPULAIRE</div>
                     <div class="product-icon">🚀</div>
@@ -868,7 +941,7 @@
                     <div class="product-subtitle">Économie de 400€ vs achat séparé</div>
                     <a href="#contact" class="cta-product">Commander</a>
                 </div>
-
+                
                 <div class="product-card fade-in">
                     <div class="product-icon">🛒</div>
                     <h3>E-commerce Premium</h3>
@@ -886,7 +959,7 @@
                     <div class="product-subtitle">Commission 0% sur ventes</div>
                     <a href="#contact" class="cta-product">Commander</a>
                 </div>
-
+                
                 <div class="product-card fade-in">
                     <div class="product-icon">🎨</div>
                     <h3>Identité Visuelle</h3>
@@ -904,7 +977,7 @@
                     <div class="product-subtitle">Livraison sous 7 jours</div>
                     <a href="#contact" class="cta-product">Commander</a>
                 </div>
-
+                
                 <div class="product-card fade-in">
                     <div class="product-icon">📱</div>
                     <h3>Marketing Digital</h3>
@@ -922,7 +995,7 @@
                     <div class="product-subtitle">ROI garanti sous 3 mois</div>
                     <a href="#contact" class="cta-product">Commander</a>
                 </div>
-
+                
                 <div class="product-card fade-in">
                     <div class="product-icon">🔧</div>
                     <h3>Maintenance & Support</h3>
@@ -941,7 +1014,7 @@
                     <a href="#contact" class="cta-product">S'abonner</a>
                 </div>
             </div>
-
+            
             <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(255,255,255,0.9); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                 <h3 style="color: #333; margin-bottom: 15px; font-size: 1.8rem;">🎁 Offres Spéciales Lancement</h3>
                 <p style="color: #666; font-size: 1.2rem; line-height: 1.6; margin-bottom: 20px;">
@@ -956,26 +1029,28 @@
 
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Nos Réalisations</h2>
+            <h2 class="section-title">Portfolio Agence Web Saint-Étienne - Nos Réalisations</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item fade-in">
                     <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=300&fit=crop');">
                         <span>Restaurant "Le Gourmet"</span>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Site Vitrine Restaurant</h4>
+                        <h4>Site Vitrine Restaurant Saint-Étienne</h4>
                         <p>Site moderne avec réservation en ligne, menu interactif et galerie photos. Augmentation de 45% des réservations.</p>
                     </div>
                 </div>
+                
                 <div class="portfolio-item fade-in">
                     <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop');">
                         <span>Boutique Mode "Élégance"</span>
                     </div>
                     <div class="portfolio-info">
-                        <h4>E-commerce Mode</h4>
+                        <h4>E-commerce Mode Loire</h4>
                         <p>Boutique en ligne complète avec 200+ articles, paiement sécurisé et livraison intégrée. +60% de ventes en ligne.</p>
                     </div>
                 </div>
+                
                 <div class="portfolio-item fade-in">
                     <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop');">
                         <span>Cabinet Médical Dr. Martin</span>
@@ -991,7 +1066,7 @@
 
     <section id="avis" class="testimonials">
         <div class="container">
-            <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+            <h2 class="section-title">Avis Clients Agence Web Saint-Étienne</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-date">Décembre 2024</div>
@@ -1014,7 +1089,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-date">Novembre 2024</div>
                     <div class="testimonial-quote">"</div>
@@ -1036,7 +1111,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-date">Janvier 2025</div>
                     <div class="testimonial-quote">"</div>
@@ -1059,7 +1134,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px);">
                 <h3 style="margin-bottom: 15px;">⭐ Note Moyenne : 4.9/5</h3>
                 <p style="opacity: 0.9; font-size: 1.1rem;">
@@ -1072,8 +1147,8 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title">Contactez W2K Digital</h2>
-                <p>Basés à Saint-Étienne, nous accompagnons les PME de la région dans leur transformation digitale !</p>
+                <h2 class="section-title">Contact Agence Web Saint-Étienne</h2>
+                <p>Basés à Saint-Étienne, nous accompagnons les PME de la Loire dans leur transformation digitale !</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
@@ -1083,7 +1158,7 @@
                         <p><small>Appels gratuits via internet</small></p>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon">✉</div>
                         <h3>Email</h3>
                         <p><a href="mailto:contact@w2k-digital.com">contact@w2k-digital.com</a></p>
                         <p><small>Réponse sous 24h</small></p>
@@ -1132,23 +1207,23 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 W2K Digital - W2K Holding | SIREN: 514 562 990</p>
-            <p>📍 35 rue d'Arcole, 42000 Saint-Étienne | 📞 06 42 53 57 59 | ✉️ contact@w2k-digital.com</p>
-            <p><strong>K. Wilfried</strong> - Directeur | Spécialiste en solutions digitales pour PME</p>
+            <p>&copy; 2025 W2K Digital - Agence Web Saint-Étienne | SIREN: 514 562 990</p>
+            <p>📍 35 rue d'Arcole, 42000 Saint-Étienne | 📞 06 42 53 57 59 | ✉ contact@w2k-digital.com</p>
+            <p><strong>K. Wilfried</strong> - Directeur | Spécialiste solutions digitales PME Loire</p>
         </div>
     </footer>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/66d85e4d50c10f7a009fd94b/1i6s4o9d5';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/66d85e4d50c10f7a009fd94b/1i6s4o9d5';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 
@@ -1185,7 +1260,7 @@
             });
         });
 
-        // Form submission - Real Formspree integration
+        // Form submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             const submitBtn = this.querySelector('.submit-btn');
             const originalText = submitBtn.textContent;
@@ -1193,8 +1268,6 @@
             submitBtn.textContent = 'Envoi en cours...';
             submitBtn.disabled = true;
             
-            // Form will be submitted to Formspree automatically
-            // Re-enable button after a delay in case of errors
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
