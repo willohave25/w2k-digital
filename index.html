@@ -55,7 +55,7 @@
         "telephone": "+33642535759",
         "email": "contact@w2k-digital.com",
         "url": "https://www.w2k-digital.com",
-        "openingHours": "Mo-Fr 09:00-18:00",
+        "openingHours": "Mo-Fr 09:00-17:00",
         "priceRange": "€€",
         "paymentAccepted": "Cash, Credit Card, Bank transfer",
         "areaServed": "Saint-Étienne, Loire, Auvergne-Rhône-Alpes",
@@ -65,6 +65,9 @@
     
     <!-- CANONICAL URL -->
     <link rel="canonical" href="https://www.w2k-digital.com">
+    
+    <!-- SITEMAP -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -495,10 +498,190 @@
             50% { transform: scale(1.05); }
         }
         
+        /* Blog Section */
+        .blog {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .blog-featured {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        
+        .blog-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .blog-featured .blog-image {
+            height: auto;
+        }
+        
+        .blog-content {
+            padding: 2rem;
+        }
+        
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .blog-category {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .blog-date {
+            color: #888;
+        }
+        
+        .blog-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+            line-height: 1.3;
+        }
+        
+        .blog-featured .blog-title {
+            font-size: 2rem;
+        }
+        
+        .blog-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .blog-link:hover {
+            color: #764ba2;
+        }
+        
+        /* Article complet */
+        .article-full {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .article-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin: 2rem 0 1rem 0;
+            padding-top: 1rem;
+            border-top: 2px solid #f0f0f0;
+        }
+        
+        .article-content h3 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-cta {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .article-cta h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .article-cta p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
         /* Portfolio Section */
         .portfolio {
             padding: 100px 0;
-            background: white;
+            background: #f8f9fa;
         }
         
         .portfolio-grid {
@@ -787,8 +970,18 @@
             .services-grid,
             .portfolio-grid,
             .products-grid,
-            .testimonials-grid {
+            .testimonials-grid,
+            .blog-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .blog-featured {
+                grid-column: span 1;
+                grid-template-columns: 1fr;
+            }
+            
+            .article-title {
+                font-size: 2rem;
             }
         }
         
@@ -819,6 +1012,7 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#produits">Nos Produits</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#avis">Avis Clients</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -829,7 +1023,6 @@
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
-                <!-- H1 OPTIMISÉ SEO -->
                 <h1>Agence Web Saint-Étienne - Présence Digitale PME</h1>
                 <p>Sites web professionnels, identité visuelle, marketing digital - W2K Digital accompagne les PME de la Loire dans leur transformation numérique</p>
                 <a href="#contact" class="cta-button">Démarrer Votre Projet</a>
@@ -840,7 +1033,6 @@
     <section class="team">
         <div class="container">
             <div class="team-content">
-                <!-- H2 AVEC MOTS-CLÉS LOCAUX -->
                 <h2 class="section-title">Agence Digitale Saint-Étienne - Notre Équipe</h2>
                 <p>Experts en solutions digitales pour PME stéphanoises - Nous combinons créativité, technologie et stratégie locale pour faire grandir votre entreprise dans la Loire</p>
                 <div class="team-image"></div>
@@ -851,12 +1043,10 @@
 
     <section id="services" class="services">
         <div class="container">
-            <!-- H2 AVEC MOTS-CLÉS STRATÉGIQUES -->
             <h2 class="section-title">Services Web Saint-Étienne - Solutions Digitales PME</h2>
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <div class="service-icon">🌐</div>
-                    <!-- H3 OPTIMISÉS POUR CHAQUE SERVICE -->
                     <h3>Création Site Web Saint-Étienne</h3>
                     <p>Site vitrine responsive, optimisé SEO, avec hébergement et nom de domaine inclus. Design moderne et adaptatif pour PME stéphanoises.</p>
                     <div class="price">À partir de 890€</div>
@@ -1024,6 +1214,138 @@
                     ✅ Devis gratuit sous 24h • ✅ Paiement en 3x sans frais • ✅ Satisfaction garantie
                 </p>
             </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog SEO - Conseils Agence Web Saint-Étienne</h2>
+            <div class="blog-grid">
+                <article class="blog-post blog-featured fade-in">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop');"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">SEO Local</span>
+                            <span class="blog-date">14 janvier 2025</span>
+                        </div>
+                        <h3 class="blog-title">Pourquoi choisir une agence web locale à Saint-Étienne ?</h3>
+                        <p class="blog-excerpt">Découvrez les avantages concrets de travailler avec une agence web implantée localement : proximité, connaissance du marché stéphanois, et accompagnement personnalisé pour votre PME.</p>
+                        <a href="#article-local" class="blog-link">Lire l'article complet →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post fade-in">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop');"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Conseils</span>
+                            <span class="blog-date">À venir</span>
+                        </div>
+                        <h3 class="blog-title">Prix d'un site internet pour PME : guide complet 2025</h3>
+                        <p class="blog-excerpt">Transparence totale sur les tarifs de création de sites web pour les entreprises stéphanoises.</p>
+                        <a href="#contact" class="blog-link">Demander un devis →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-post fade-in">
+                    <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=400&h=250&fit=crop');"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">SEO</span>
+                            <span class="blog-date">À venir</span>
+                        </div>
+                        <h3 class="blog-title">Référencement local Saint-Étienne : stratégies efficaces</h3>
+                        <p class="blog-excerpt">Comment optimiser votre visibilité sur Google pour attirer plus de clients locaux dans la Loire.</p>
+                        <a href="#contact" class="blog-link">En savoir plus →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article complet -->
+    <section id="article-local" class="blog" style="background: #f8f9fa; display: none;">
+        <div class="container">
+            <article class="article-full">
+                <header class="article-header">
+                    <h1 class="article-title">Pourquoi choisir une agence web locale à Saint-Étienne ?</h1>
+                    <div class="article-meta">
+                        <span>📅 14 janvier 2025</span>
+                        <span>👤 K. Wilfried</span>
+                        <span>🏷️ SEO Local</span>
+                        <span>⏱️ 5 min de lecture</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <p>Dans un monde digitalisé où les entreprises peuvent travailler avec des prestataires aux quatre coins du globe, pourquoi privilégier une <strong>agence web locale à Saint-Étienne</strong> ? La réponse réside dans une combinaison unique d'avantages concrets qui font la différence pour votre PME.</p>
+
+                    <h2>La proximité : un atout majeur pour votre projet web</h2>
+                    
+                    <h3>Des rendez-vous en face à face</h3>
+                    <p>Rien ne remplace un échange direct pour comprendre vos besoins réels. Chez W2K Digital, nous privilégions les rencontres dans nos locaux rue d'Arcole ou directement chez vous. Cette proximité géographique permet :</p>
+                    <ul>
+                        <li>Une meilleure compréhension de votre activité et de votre environnement</li>
+                        <li>Un suivi personnalisé tout au long du projet</li>
+                        <li>Une réactivité immédiate en cas de besoin urgent</li>
+                        <li>La construction d'une relation de confiance durable</li>
+                    </ul>
+
+                    <h3>Une connaissance fine du marché stéphanois</h3>
+                    <p>Travailler avec une agence implantée à Saint-Étienne, c'est bénéficier d'une expertise locale irremplaçable. Nous connaissons :</p>
+                    <ul>
+                        <li>Les spécificités économiques de la métropole stéphanoise</li>
+                        <li>Les habitudes de consommation des habitants de la Loire</li>
+                        <li>Les événements et actualités qui rythment la vie locale</li>
+                        <li>Les entreprises partenaires et réseaux professionnels de la région</li>
+                    </ul>
+
+                    <h2>Un écosystème digital adapté à la Loire</h2>
+
+                    <h3>Référencement local optimisé</h3>
+                    <p>Notre expertise du <strong>référencement local Saint-Étienne</strong> nous permet d'optimiser votre visibilité pour des recherches géolocalisées. Nous savons comment positionner votre entreprise sur :</p>
+                    <ul>
+                        <li>Google My Business avec une stratégie locale efficace</li>
+                        <li>Les recherches "près de moi" dans la Loire</li>
+                        <li>Les annuaires et plateformes régionales pertinents</li>
+                        <li>Les mots-clés spécifiques à votre secteur géographique</li>
+                    </ul>
+
+                    <h3>Un réseau de partenaires locaux</h3>
+                    <p>En tant qu'<strong>agence digitale implantée à Saint-Étienne</strong>, nous avons développé un réseau solide de partenaires :</p>
+                    <ul>
+                        <li>Photographes professionnels pour vos contenus visuels</li>
+                        <li>Rédacteurs spécialisés dans votre secteur d'activité</li>
+                        <li>Imprimeurs pour vos supports de communication</li>
+                        <li>Développeurs spécialisés pour des projets complexes</li>
+                    </ul>
+
+                    <h2>Des tarifs adaptés aux PME stéphanoises</h2>
+
+                    <h3>Une approche tarifaire transparente</h3>
+                    <p>Contrairement aux grandes agences parisiennes, nos tarifs restent accessibles aux <strong>PME de la Loire</strong>. Notre grille tarifaire claire et sans surprise :</p>
+                    <ul>
+                        <li>Site vitrine professionnel : à partir de 890€</li>
+                        <li>Identité visuelle complète : à partir de 590€</li>
+                        <li>Pack complet PME : 1490€ (économie de 400€)</li>
+                        <li>Maintenance mensuelle : dès 89€/mois</li>
+                    </ul>
+
+                    <h3>Un accompagnement sur mesure</h3>
+                    <p>Nous adaptons nos prestations à la taille et aux moyens de votre entreprise, avec des solutions évolutives qui grandissent avec vous.</p>
+
+                    <div class="article-cta">
+                        <h3>Prêt à démarrer votre projet web avec W2K Digital ?</h3>
+                        <p>Rencontrons-nous pour discuter de vos objectifs et définir ensemble la stratégie digitale adaptée à votre entreprise stéphanoise.</p>
+                        <a href="#contact" class="cta-button">Prendre rendez-vous</a>
+                    </div>
+
+                    <h2>Le choix de la qualité et de la proximité</h2>
+                    <p>Choisir W2K Digital, c'est opter pour une <strong>agence web à taille humaine</strong> qui place la relation client au cœur de ses priorités. Notre implantation locale nous permet de vous offrir un service personnalisé, réactif et parfaitement adapté aux enjeux des entreprises de Saint-Étienne et de la Loire.</p>
+
+                    <p>Votre réussite digitale mérite un partenaire qui vous comprend et partage votre ambition. Contactez-nous pour découvrir comment nous pouvons transformer votre présence en ligne.</p>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -1259,6 +1581,37 @@
                 }
             });
         });
+
+        // Blog article toggle
+        document.querySelectorAll('a[href="#article-local"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const blogSection = document.getElementById('blog');
+                const articleSection = document.getElementById('article-local');
+                
+                blogSection.style.display = 'none';
+                articleSection.style.display = 'block';
+                
+                articleSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Back to blog
+        function backToBlog() {
+            const blogSection = document.getElementById('blog');
+            const articleSection = document.getElementById('article-local');
+            
+            articleSection.style.display = 'none';
+            blogSection.style.display = 'block';
+            
+            blogSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
 
         // Form submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
